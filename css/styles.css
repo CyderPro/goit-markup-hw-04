@@ -92,6 +92,26 @@ img {
   display: flex;
   gap: 50px;
 }
+
+
+.header-icons-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon {
+  width: 16px;
+  height: 12px;
+  display: flex;
+  margin-right: 10px;
+}
+
+
+.header-icon:hover {
+  color: #2196f3;
+}
+
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -111,6 +131,7 @@ img {
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
 }
 
 .header-contact:hover,
@@ -120,14 +141,16 @@ img {
 
 /* //*================= HERO ================== */
 
-
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url(../images/hero.jpg);
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -174,15 +197,12 @@ img {
 .benefits-icon {
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 102.34px;
-  background: #F5F4FA;
-  display: block;
+  background: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-
 }
-
 
 .benefits-title-hidden {
   position: absolute;
@@ -303,13 +323,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .team-soc-link:hover {
-  background: #2196F3;
+  background: #2196f3;
   fill: #ffffff;
-
 }
 
 /* //*================= FOOTER ================== */
@@ -320,7 +339,7 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
 }
 
@@ -404,14 +423,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-soc-link:hover {
-  background: #2196F3;
+  background: #2196f3;
 }
-
-
 
 /* !======================= PORTFOLIO ==========================================  */
 
@@ -493,6 +510,11 @@ img {
 
 .portfolio-item {
   background: #ffffff;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
