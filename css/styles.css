@@ -88,30 +88,6 @@ img {
   margin-right: auto;
 }
 
-.header-nav {
-  display: flex;
-  gap: 50px;
-}
-
-
-.header-icons-position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-icon {
-  width: 16px;
-  height: 12px;
-  display: flex;
-  margin-right: 10px;
-}
-
-
-.header-icon:hover {
-  color: #2196f3;
-}
-
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -125,18 +101,47 @@ img {
   color: #2196f3;
 }
 
+.header-nav {
+  display: flex;
+  gap: 50px;
+}
+
+
+.header-icons-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .header-contact {
+  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: #757575;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.header-contact:hover, .header-icon:hover,
+.header-contact:focus, .header-icon:focus {
   color: #2196f3;
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+#icon-smartphone:hover {
+  color: #2196f3;
+}
+
+.icon-active:hover {
+  background-color: #2196F3;
 }
 
 /* //*================= HERO ================== */
@@ -185,6 +190,11 @@ img {
   display: block;
   margin: 0 auto;
   border: none;
+}
+
+.hero-btn:hover, 
+.hero-btn:focus {
+  background-color: #188CE8;
 }
 
 /* //*================= BENEFITS ================== */
@@ -326,7 +336,8 @@ img {
   fill: #afb1b8;
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   background: #2196f3;
   fill: #ffffff;
 }
